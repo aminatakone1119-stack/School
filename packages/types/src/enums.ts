@@ -1,0 +1,98 @@
+/**
+ * School Management System - Domain Enumerations
+ * Source of truth: Specifications V1 & Database Model
+ */
+
+export enum UserRole {
+  ADMIN = 'ADMIN',
+  DIRECTOR = 'DIRECTOR',
+  ACCOUNTANT = 'ACCOUNTANT',
+}
+
+export enum Gender {
+  MALE = 'MALE',
+  FEMALE = 'FEMALE',
+}
+
+export enum StudentStatus {
+  ACTIVE = 'ACTIVE',
+  SUSPENDED = 'SUSPENDED',
+  LEFT = 'LEFT',
+  TRANSFERRED = 'TRANSFERRED',
+  DROPOUT = 'DROPOUT',
+}
+
+export enum EnrollmentStatus {
+  ACTIVE = 'ACTIVE',
+  SUSPENDED = 'SUSPENDED',
+  CANCELLED = 'CANCELLED',
+  COMPLETED = 'COMPLETED',
+}
+
+export enum SchoolYearStatus {
+  PREPARATION = 'PREPARATION',
+  ACTIVE = 'ACTIVE',
+  CLOSED = 'CLOSED',
+}
+
+export enum FeeTypeCode {
+  REGISTRATION = 'REGISTRATION',
+  TUITION = 'TUITION',
+  OTHER = 'OTHER',
+}
+
+export enum StudentFeeStatus {
+  UNPAID = 'UNPAID',
+  PARTIAL = 'PARTIAL',
+  PAID = 'PAID',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum PaymentMethod {
+  CASH = 'CASH',
+}
+
+export enum PaymentStatus {
+  VALIDATED = 'VALIDATED',
+  CANCELLED = 'CANCELLED',
+}
+
+export enum CashRegisterStatus {
+  OPEN = 'OPEN',
+  CLOSED = 'CLOSED',
+  REOPENED = 'REOPENED',
+}
+
+export enum NotificationType {
+  INFO = 'INFO',
+  SUCCESS = 'SUCCESS',
+  WARNING = 'WARNING',
+  ERROR = 'ERROR',
+}
+
+export enum SupportedLanguage {
+  FR = 'fr',
+  AR = 'ar',
+}
+
+export enum AuditAction {
+  STUDENT_CREATE = 'STUDENT_CREATE',
+  STUDENT_UPDATE = 'STUDENT_UPDATE',
+  STUDENT_ARCHIVE = 'STUDENT_ARCHIVE',
+  ENROLLMENT_CREATE = 'ENROLLMENT_CREATE',
+  ENROLLMENT_UPDATE = 'ENROLLMENT_UPDATE',
+  ENROLLMENT_CANCEL = 'ENROLLMENT_CANCEL',
+  PAYMENT_CREATE = 'PAYMENT_CREATE',
+  PAYMENT_CANCEL = 'PAYMENT_CANCEL',
+  CASHBOX_OPEN = 'CASHBOX_OPEN',
+  CASHBOX_CLOSE = 'CASHBOX_CLOSE',
+  CASHBOX_REOPEN = 'CASHBOX_REOPEN',
+  SCHOOL_YEAR_CREATE = 'SCHOOL_YEAR_CREATE',
+  SCHOOL_YEAR_ACTIVATE = 'SCHOOL_YEAR_ACTIVATE',
+  SCHOOL_YEAR_CLOSE = 'SCHOOL_YEAR_CLOSE',
+  SCHOOL_YEAR_REOPEN = 'SCHOOL_YEAR_REOPEN',
+  USER_CREATE = 'USER_CREATE',
+  USER_UPDATE = 'USER_UPDATE',
+  USER_DISABLE = 'USER_DISABLE',
+  ROLE_UPDATE = 'ROLE_UPDATE',
+}
